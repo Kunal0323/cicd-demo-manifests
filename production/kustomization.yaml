@@ -5,9 +5,9 @@ patches:
 - path: overlay.yaml
   target:
     kind: Deployment
-    labelSelector: app=cicd-demo
+    labelSelector: app=ci-cd-demo
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: minghsu0107/cicd-demo
+- name: Kunal0323/ci-cd-demo
   newTag: main-b7d5a0f
